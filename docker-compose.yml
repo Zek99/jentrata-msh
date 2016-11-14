@@ -13,6 +13,8 @@ services:
       POSTGRES_DB: jentrata
       DB_USER_NAME: corvus
       DB_USER_PASS: corvus
+    ports:
+      - "5432:5432"
     volumes:
     - ./Dist/src/main/scripts/sql/as2.sql:/work/sql/as2.sql
     - ./Dist/src/main/scripts/sql/ebms.sql:/work/sql/ebms.sql
