@@ -24,6 +24,7 @@ services:
     ports:
       - "8080:8080"
       - "8000:8000"
+      - "443:8443"
     depends_on:
       - posters
       - activemq
